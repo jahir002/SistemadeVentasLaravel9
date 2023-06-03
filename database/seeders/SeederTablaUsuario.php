@@ -20,7 +20,7 @@ class SeederTablaUsuario extends Seeder
       $superusu = new User();
       $superusu->name="Superusuario";
       $superusu->email="superadmin@gmail.com";
-      $superusu->password=Hash::make('12345678');
+      $superusu->password='12345678';
       $superusu->created_at=null;
       $superusu->updated_at=null;
       $superusu->save();
