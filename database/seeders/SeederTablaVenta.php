@@ -16,7 +16,7 @@ class SeederTablaVenta extends Seeder
     public function run()
     {
         $ventas = new Venta();
-
+        $ventas->id=1;
         $ventas->serie="SV-20230518-1";
         $ventas->numero="NV-1";
         $ventas->fechaemision="2023-05-13T18:20";
