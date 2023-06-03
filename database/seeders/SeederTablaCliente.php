@@ -15,6 +15,7 @@ class SeederTablaCliente extends Seeder
     public function run()
     {
         $clientes = new Cliente();
+        $clientes->id=1;
         $clientes->nombre="John Ramirez";
         $clientes->tipodocumento="DNI";
         $clientes->numerodocumento="70845678";
