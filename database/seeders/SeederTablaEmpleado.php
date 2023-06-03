@@ -15,6 +15,7 @@ class SeederTablaEmpleado extends Seeder
     public function run()
     {
         $empleado= new Empleado();
+         $empleado->id=1;
         $empleado->nombre="Carlos Ruiz";
         $empleado->dni="78901064";
         $empleado->cargo="Encargado de Venta";
