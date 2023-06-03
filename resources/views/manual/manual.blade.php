@@ -111,6 +111,11 @@
                                         </i>
                                     </a>
 
+                                    <a href="https://github.com/jahir002/SistemadeVentasLaravel9.git" target="_blank" class="btn btn-dark">
+                                       <i class="fab fa-github"></i>
+                                    </a>
+
+
                                 </li>
 
                             </ul>

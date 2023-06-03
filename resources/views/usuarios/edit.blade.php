@@ -20,14 +20,14 @@
 	</div>
 
 	<div class="mb-3">
-			<label for="" class="form-label">Password</label>
+			<label for="" class="form-label">Clave</label>
 			<input type="text" id="password" name="password" class="form-control" 
-			placeholder="password"    tabindex="4">
+			placeholder="password" value="{{$usuario->password}}"  tabindex="4">
 	</div>
 
 	<div class="mb-3">
-		<label for="" class="form-label">Confirmar Password</label>
-		<input type="text" id="confirm-password" name="confirm-password" class="form-control" placeholder="confirm-password"  tabindex="8">
+		<label for="" class="form-label">Confirmar Clave</label>
+		<input type="text" id="confirm-password" name="confirm-password" class="form-control" value="{{$usuario->password}}" placeholder="confirm-password"  tabindex="8">
     </div>
 	<div class="mb-3">
 		<label for="" class="form-label">Roles</label>

@@ -63,7 +63,7 @@ class UsuarioController extends Controller
         ]);
 
         $input=$request->all();
-        $input['password']= Hash::make($input['password']);
+       // $input['password']= Hash::make($input['password']);
 
         $user=User::create($input);
         $user->assignRole($request->input('roles'));
@@ -120,13 +120,14 @@ class UsuarioController extends Controller
             ]);
 
             $input= $request->all();
-
+            /*
             if(!empty($input['password'])){
                 $input['password']=Hash::make($input['password']);
             }
             else{
                 $input=Arr::except($input,array('password'));
-            }
+            }*/
+            
             $user=User::find($id);
             $user->update($input);
             DB::table('model_has_roles')->where('model_id',$id)->delete();
