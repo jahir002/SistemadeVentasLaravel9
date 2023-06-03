@@ -16,7 +16,7 @@ class SeederTablaDetaCategoria extends Seeder
     public function run()
     {
         $categoria=new Categoria();
-       // $categoria->id=null;
+        $categoria->id=1;
         $categoria->nombre="Ropa de Verano";
         $categoria->descripcion="Ropa de la Temporada de Verano 2023 ";
         $categoria->estado="Activo";
