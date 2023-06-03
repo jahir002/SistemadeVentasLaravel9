@@ -15,6 +15,7 @@ class SeederTablaDetaMarca extends Seeder
     public function run()
     {
         $marca=new Marca();
+         $marca->id=1;
         $marca->nombre="NIKE";
         $marca->estado="Activo";
         $marca->save();
